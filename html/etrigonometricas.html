@@ -1,0 +1,232 @@
+<!-- Indica que é o HTML mais recente -->
+<!DOCTYPE html>
+<!-- Página traduzida para o português -->
+<html lang="pt-br">
+<!-- Início do <head> -->
+
+<head>
+    <!-- Permite caracteres especiais -->
+    <meta charset="UTF-8">
+    <!-- Permite responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Nome da página na aba do navegador -->
+    <title>Exercícios Extras de Razões Trigonométricas - Ensino Médio em Ação</title>
+    <!-- Estilização com CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+    <!-- Imagem na aba do navegador -->
+    <link rel="shortcut icon" href="../assets/images/aba-matematica2.png">
+    <!-- Utilização de ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<!-- Fim do <head> -->
+<!-- Início do <body> -->
+
+<body onload="nome()">
+    <!-- Início do <div> para o Grid -->
+    <div class="container">
+        <!-- Início do <header> -->
+        <header>
+            <!-- Início do <nav> -->
+            <nav class="navbar">
+                <!-- Logo -->
+                <a href="../index.html">
+                    <h1>Matemática</h1>
+                </a>
+                <!-- Início do <ul> -->
+                <ul class="nav-menu">
+                    <!-- Link -->
+                    <li class="nav-item"><a href="#" class="nav-link">Notificações</a></li>
+                    <!-- Link -->
+                    <li class="nav-item"><a href="#" class="nav-link">Categoria</a></li>
+                    <!-- Link -->
+                    <li class="nav-item"><a href="#" class="nav-link">Histórico</a></li>
+                    <!-- Link -->
+                    <li class="nav-item"><a href="#" class="nav-link">Perfil</a></li>
+                </ul>
+                <!-- Fim do <ul> -->
+                <!-- Início do <div> -->
+                <div class="hamburguer">
+                    <!-- Início do menu -->
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <!-- Fim do menu -->
+                </div>
+                <!-- Fim do <div> -->
+            </nav>
+            <!-- Fim do <nav> -->
+        </header>
+        <!-- Fim do <header> -->
+        <!-- Início do <main> -->
+        <main class="news-container">
+            <!-- Início do <article> -->
+            <article class="news-item">
+                <!-- Início do <strong> -->
+                <strong>
+                    <!-- Nome do usuário -->
+                    <p id="nome"></p>
+                </strong>
+                <!-- Fim do <strong> -->
+                <!-- Início da <section> -->
+                <section class="questoes_formulario">
+                    <!-- Título -->
+                    <h2>Razões Trigonométricas</h2>
+                    <!-- Quebra de linha -->
+                    <br>
+                    <!-- Início do <form> -->
+                    <form>
+                        <!-- Enunciado -->
+                        <p><strong>1. Quantas razões (ou relações) estão relacionadas com os ângulos de um triângulo
+                                retângulo?</strong></p><br>
+                        <!-- Início do <figure> -->
+                        <figure>
+                            <!-- Imagem -->
+                            <img src="../assets/images/menino-pensando.png" width="200px" alt="Triângulo Retângulo"><br><br>
+                        </figure>
+                        <!-- Fim do <figure> -->
+                        <!-- Botão para descobrir o resultado -->
+                        <button type="button" onclick="respostatrigonometricas2()"
+                            class="botao-formulario">Responder</button>
+                    </form>
+                    <!-- Fim do <form> -->
+                </section>
+                <!-- Fim da <section> -->
+            </article>
+            <!-- Fim do <article> -->
+        </main>
+        <!-- Fim do <main> -->
+
+        <!-- Início do <aside> -->
+        <aside class="conteudos_exercicios">
+            <!-- Subtítulo -->
+            <h3>Exercícios extras:</h3>
+            <!-- Início do <ul> -->
+            <ul>
+                <!-- Link para o exercício -->
+                <li><a href="./etriangulo.html">Triângulo Retângulo</a></li>
+                <!-- Link para o exercício -->
+                <li><a href="./epitagoras.html">Teorema de Pitágoras</a></li>
+            </ul>
+            <!-- Fim do <ul> -->
+            <!-- Quebra de linha -->
+            <br><br>
+            <!-- Início do <section> -->
+            <section>
+                <!-- Início do <form> -->
+                <form class="calculadora">
+                    <!-- Quebra de linha -->
+                    <br>
+                    <!-- Título -->
+                    <h2>Calculadora</h2>
+                    <!-- Quebra de linha -->
+                    <br>
+                    <!-- Primiro número a ser colocado -->
+                    <p>Valor 1: </p><input type="text" id="numero1" class="numero-calculadora" value="0"><br><br>
+                    <!-- Segundo número a ser colocado -->
+                    <p>Valor 2: </p><input type="text" id="numero2" class="numero-calculadora" value="0"><br><br>
+                    <!-- Botão para somar -->
+                    <input type="button" class="botao" value="+" onclick="somar()">
+                    <!-- Botão para subtrair -->
+                    <input type="button" class="botao" value="-" onclick="diminuir()">
+                    <!-- Botão para multiplicar -->
+                    <input type="button" class="botao" value="x" onclick="multiplicar()">
+                    <!-- Botão para dividir -->
+                    <input type="button" class="botao" value="÷" onclick="dividir()"><br><br>
+                    <!-- Resultado -->
+                    <p>Resultado: </p><input type="text" id="resultado" class="numero-calculadora" value="0"><br><br>
+                </form>
+                <!-- Fim do <form> -->
+            </section>
+            <!-- Fim do <section> -->
+        </aside>
+        <!-- Fim do <aside> -->
+        <!-- Início do <footer> -->
+        <footer>
+            <!-- Início do <div> -->
+            <div class="container-footer">
+                <!-- Início do <div> -->
+                <div class="row-footer">
+                    <!-- Início da coluna -->
+                    <div class="footer-col">
+                        <!-- Subtítulo -->
+                        <h4>Sobre</h4>
+                        <!-- Início da <ul> -->
+                        <ul>
+                            <!-- Início do <li> -->
+                            <li><a href="#">Quem somos</a></li>
+                            <li><a href="#">Nossos serviços</a></li>
+                            <li><a href="#">Política de privacidade</a></li>
+                            <li><a href="#">Termos de uso</a></li>
+                            <!-- Fim do <li> -->
+                        </ul>
+                        <!-- Fim da <ul> -->
+                    </div>
+                    <!-- Fim da coluna -->
+                    <!-- Início da coluna -->
+                    <div class="footer-col">
+                        <!-- Subtítulo -->
+                        <h4>Categoria</h4>
+                        <!-- Início da <ul> -->
+                        <ul>
+                            <!-- Início do <li> -->
+                            <li><a href="#">1° ano (Ensino Médio)</a></li>
+                            <li><a href="#">2° ano (Ensino Médio)</a></li>
+                            <li><a href="#">3° ano (Ensino Médio)</a></li>
+                            <!-- Fim do <li> -->
+                        </ul>
+                        <!-- Fim da <ul> -->
+                    </div>
+                    <!-- Fim da coluna -->
+                    <!-- Início da coluna -->
+                    <div class="footer-col">
+                        <!-- Subtítulo -->
+                        <h4>Disciplinas</h4>
+                        <!-- Início da <ul> -->
+                        <ul>
+                            <!-- Início do <li> -->
+                            <li><a href="#">Geografia</a></li>
+                            <li><a href="#">História</a></li>
+                            <li><a href="#">Língua Portuguesa</a></li>
+                            <li><a href="#">Matemática</a></li>
+                            <!-- Fim do <li> -->
+                        </ul>
+                        <!-- Fim da <ul> -->
+                    </div>
+                    <!-- Fim da coluna -->
+                    <!-- Início da coluna -->
+                    <div class="footer-col">
+                        <!-- Subtítulo -->
+                        <h4>Redes sociais</h4>
+                        <!-- Início das redes sociais -->
+                        <div class="medias-sociais">
+                            <!-- Facebook -->
+                            <a href="#"><i class="fa fa-facebook"></i></a>
+                            <!-- Instagram -->
+                            <a href="#"><i class="fa fa-instagram"></i></a>
+                            <!-- Twitter -->
+                            <a href="#"><i class="fa fa-twitter"></i></a>
+                        </div>
+                        <!-- Fim das redes sociais -->
+                    </div>
+                    <!-- Fim da coluna -->
+                </div>
+                <!-- Fim do <div> -->
+            </div>
+            <!-- Fim do <div> -->
+            <!-- Início do copyright -->
+            <div class="footer-copyright">
+                <!-- Direitos autorais -->
+                <p>&copy; 2025 Todos os Direitos Reservados.</p>
+            </div>
+            <!-- Fim do copyright -->
+        </footer>
+        <!-- Fim do <footer> -->
+    </div>
+    <!-- Fim do <div> para o Grid -->
+    <!-- Uso do JavaScript -->
+    <script src="../js/script.js"></script>
+</body>
+<!-- Fim do <body> -->
+
+</html>
+<!-- Fim do <html> -->
