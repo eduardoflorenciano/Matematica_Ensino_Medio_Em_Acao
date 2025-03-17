@@ -2,7 +2,7 @@
 
 Bem-vindo ao repositório do **Matemática Ensino Médio em Ação**, uma plataforma digital desenvolvida para auxiliar estudantes do ensino médio no aprendizado de matemática por meio de conteúdos explicativos e exercícios interativos.
 
-![visao](https://github.com/eduardoflorenciano/Matematica_Ensino_Medio_Em_Acao/assets/demo-image.png)
+![Image](https://github.com/user-attachments/assets/447fac65-5bef-4d90-8df2-5a3e5dd31620)
 
 <h3>Quer ver o projeto? <a href="https://eduardoflorenciano.github.io/Matematica_Ensino_Medio_Em_Acao/">Clique Aqui</a></h3>
 
