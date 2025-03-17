@@ -1,4 +1,4 @@
-# 📘 Matemática Ensino Médio em Ação | Plataforma Educacional Interativa
+# 📘 Matemática - Ensino Médio em Ação | Plataforma Educacional Interativa
 
 Bem-vindo ao repositório do **Matemática Ensino Médio em Ação**, uma plataforma digital desenvolvida para auxiliar estudantes do ensino médio no aprendizado de matemática por meio de conteúdos explicativos e exercícios interativos.
 
