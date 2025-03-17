@@ -1,0 +1,599 @@
+/* Estrutura do site inteiro */
+
+/* Fonte das letras */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* Aplicado em todos os elementos do site */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Parte visual do <body> */
+body {
+    background-color: #F0EBF8;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Header */
+
+/* Parte visual do <header> */
+header {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Estrutura do <h1> do <header> */
+header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Estrutura do <li> do <header> */
+header ul li {
+    list-style: none;
+}
+
+/* Estrutura do <a> do <header> */
+header a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estrutura do <nav class="navbar"> */
+.navbar {
+    min-height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 34px;
+    font-weight: bold;
+}
+
+/* Estrutura do <ul class="nav-menu"> */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+/* Estrutura do <a href="#" class="nav-link"> */
+.nav-link {
+    transition: 0.5s ease;
+}
+
+/* Animação dos links do <header> */
+.nav-link:hover {
+    color: #ada9a9;
+}
+
+/* Estrutura do <div class="hamburger"> */
+.hamburguer {
+    display: none;
+    cursor: pointer;
+}
+
+/* Estrutura do <span class="bar"> */
+.bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    border-radius: 2px;
+    margin: 5px auto;
+    background-color: #fff;
+    transition: all 0.3s ease-in-out;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Main */
+
+/* Estrutura do <article> */
+.news-item {
+    margin: 1.5rem;
+    box-shadow: rgba(0, 0, 0, .25) 8px 8px 15px;
+    padding: 1rem;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-radius: 20px;
+    background-color: #fff;
+}
+
+/* Estrutura do <main> */
+.news-container {
+    display: flex;
+    margin: 1rem;
+    gap: 5rem;
+    justify-content: center;
+}
+
+/* Estrutura do <h2> no <main> */
+main h2 {
+    text-align: center;
+}
+
+/* Estrutura do <p class="formula_teorema_pitagoras"> */
+.formula_teorema_pitagoras {
+    text-align: center;
+}
+
+/* Estrutura do <section class="triangulo_retangulo"> */
+.triangulo_retangulo {
+    padding: 20px;
+}
+
+.questoes_formulario {
+    padding: 20px;
+}
+
+
+/* Estrutura do <section class="triangulo_retangulo"> */
+.teorema_pitagoras {
+    padding: 20px;
+}
+
+/* Estrutura do <section class="triangulo_retangulo"> */
+.razoes_trigonometricas {
+    padding: 20px;
+}
+
+/* Estrutura do <figure> */
+figure {
+    text-align: center;
+}
+
+/* Estrutura do <a href="#" class="exercicios">Exercícios</a> */
+.exercicios {
+    display: block;
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Aside */
+
+/* Estrutura do <class="conteudos_exercicios"> */
+.conteudos_exercicios {
+    padding: 40px;
+}
+
+/* Estrutura das listas do <aside>*/
+aside li {
+    list-style: none;
+}
+
+/* Estrutura dos links do <aside> */
+aside a {
+    text-decoration: none;
+}
+
+/* Estrutura das propagandas */
+.propaganda {
+    text-align: center;
+}
+
+/* Estrutura do <h3 class="h3-publicidade"> */
+.h3-publicidade {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Footer */
+
+/* Parte visual do <footer> */
+footer {
+    background-color: #000;
+}
+
+/* Estrutura do <footer> */
+footer {
+    padding: 50px 0;
+}
+
+/* Estrutura do <div class="container-footer"> */
+.container-footer {
+    max-width: 1400px;
+    padding: 0 4%;
+    margin: auto;
+}
+
+/* Estrutura do <div class="row-footer"> */
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Estrutura do <div class="footer-col"> */
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+/* Parte visual do <h4> do <div class="footer-col"> */
+.footer-col h4 {
+    color: #fff;
+}
+
+/* Estrutura do <h4> do <div class="footer-col"> */
+.footer-col h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+/* Estrutura da <ul> do <div class="footer-col"> */
+.footer-col ul {
+    list-style: none;
+}
+
+/* Estrutura do <li> do <div class="footer-col"> */
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+/* Parte visual do <a> do <div class="footer-col"> */
+.footer-col ul li a {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+/* Estrutura do <a> do <div class="footer-col"> */
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+}
+
+/* Animação do <a> do <div class="footer-col"> */
+.footer-col ul li a:hover {
+    color: #ada9a9;
+    padding-left: 10px;
+}
+
+/* Estrutura das redes sociais */
+.footer-col .medias-sociais {
+    margin-top: 30px;
+}
+
+/* Parte visual do <a> do <div class="medias-sociais"> */
+.footer-col .medias-sociais a {
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 0.5s ease;
+}
+
+/* Estrutura do <a> do <div class="medias-sociais"> */
+.footer-col .medias-sociais a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+}
+
+/* Estrutura dos ícones dentro das redes sociais */
+.footer-col .medias-sociais a i {
+    font-size: 20px;
+}
+
+/* Animação das redes sociais */
+.footer-col .medias-sociais a:hover {
+    color: #000;
+    background-color: #fff;
+}
+
+/* Parte visual do copyright */
+.footer-copyright {
+    color: #fff;
+}
+
+/* Estrutura do copyright */
+.footer-copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+    margin-top: 50px;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Grid */
+
+/* Estrutura do Grid */
+.container {
+    display: grid;
+    grid-template-areas:
+        "cabeca cabeca cabeca"
+        "corpo corpo braco"
+        "perna perna perna";
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 100px auto auto;
+}
+
+/* Grid do <header> */
+header {
+    grid-area: cabeca;
+}
+
+/* Grid do <main> */
+main {
+    grid-area: corpo;
+}
+
+/* Grid do <aside> */
+aside {
+    grid-area: braco;
+}
+
+/* Grid do <footer> */
+footer {
+    grid-area: perna;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Responsividade */
+
+/* Responsividade para computador */
+@media (max-width: 1024px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "cabeca cabeca cabeca"
+            "corpo corpo braco"
+            "perna perna perna";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+/* Responsividade para tablet */
+@media (max-width:768px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "cabeca cabeca cabeca"
+            "corpo corpo corpo"
+            "braco braco braco"
+            "perna perna perna";
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto auto;
+    }
+
+    /* Remoção do <div class="propaganda"> */
+    .propaganda {
+        display: none;
+    }
+
+    /* Remoção do <h3 class="h3-publicidade"> */
+    .h3-publicidade {
+        display: none;
+    }
+
+    /* Responsividade do <header> */
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #000;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* Responsividade do <footer> */
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+/* Responsividade para celular */
+@media (max-width:480px) {
+    .container {
+        display: grid;
+        grid-template-areas:
+            "cabeca"
+            "corpo"
+            "braco"
+            "perna";
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    /* Remoção do <div class="propaganda"> */
+    .propaganda {
+        display: none;
+    }
+
+    /* Remoção do <h3 class="h3-publicidade"> */
+    .h3-publicidade {
+        display: none;
+    }
+
+    /* Responsividade do <header> */
+    .hamburguer {
+        display: block;
+    }
+
+    .hamburguer.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburguer.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburguer.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        border-radius: 0 0 20px 20px;
+        background-color: #000;
+        text-align: center;
+        flex-direction: column;
+        width: 100%;
+        transition: 0.3s;
+    }
+
+    .nav-item {
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    /* Responsividade do <footer> */
+    .footer-col {
+        width: 100%;
+    }
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------ */
+
+/* Formulário */
+
+/* Quando o usuário acerta, irá aparecer uma mensagem verde */
+.verde {
+    color: #008000;
+}
+
+/* Animação com a mensagem verde */
+.verde:hover {
+    color: #fff;
+    background-color: #008000;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+/* Quando o usuário erra, irá aparecer uma mensagem vermelha */
+.vermelho {
+    color: #ff0000;
+}
+
+/* Animação com a mensagem vermelha */
+.vermelho:hover {
+    color: #fff;
+    background-color: #ff0000;
+    border-radius: 10px;
+    padding: 10px;
+    transition: all 0.5s ease;
+}
+
+/* Estrutura da quantidade de acertos */
+.quantidade_acertos {
+    text-align: center;
+}
+
+/* Parte visual do botão "Resultado" do formulário */
+.botao-formulario {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+}
+
+/* Estrutura do botão "Resultado" do formulário */
+.botao-formulario {
+    border: 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 15px;
+}
+
+/* Borda no nome do usuário quando entra na formulário */
+#nome {
+    border: 2px solid #808080;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+/* Estrutura da calculadora */
+.calculadora {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    width: 300px;
+    margin: 0 auto;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, .25) 8px 8px 15px;
+}
+
+/* Estrutura do <input> da calculadora */
+.numero-calculadora {
+    border-radius: 20px;
+    border: none;
+    border: 2px solid #808080;
+    width: 80%;
+    height: 40px;
+    text-align: center;
+}
+
+/* Estrutura dos botões dos símbolos matemáticos da calculadora */
+.botao {
+    padding: 10px 20px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50%;
+    text-decoration: none;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    font-size: 15px;
+}
